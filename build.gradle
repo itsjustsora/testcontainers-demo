@@ -14,7 +14,16 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'mysql:mysql-connector-java:8.0.28'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // https://mvnrepository.com/artifact/org.assertj/assertj-core
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+
 }
 
 tasks.named('test') {
